@@ -6,12 +6,15 @@
 
   <div style="text-align: center;padding: 30px;">
     <input type="text"
+           [(ngModel)]="currentNumber"
+           (blur)="validate();"
+           (paste)="validate();"
            style="border: 1px solid #BCE0FD; border-radius: 10px;height: 36px;width: 370px;padding: 0 10px;font-size: 18px;">
   </div>
 
   <div style="text-align: center;padding: 10px;font-family: sans-serif;">
     <div>
-      <button class="button">
+      <button class="button" (click)="validate();">
         Submit
       </button>
 
@@ -54,71 +57,87 @@
   <!--</div>-->
 
   <div style="text-align: center;">
-    <div style="width: 800px;box-shadow: -1px 0 4px lightgrey;display: inline-block;">
-    <div>Credit Card Numbers For Testing Purposes Only</div>
+    <div style="width: 800px;box-shadow: -1px 0 4px lightgrey;display: inline-block;padding: 10px;">
 
-    <div style="width: 500px;display: inline-block;">
-      <table style="width:100%;">
-        <tr>
-          <th>Visa</th>
-          <th>Master Card</th>
-          <th>AMEX</th>
-        </tr>
-        <tr>
-          <td>4111 1111 1111 1111</td>
-          <td>5505 0326 0378 1347</td>
-          <td>3718 892513 11442</td>
-        </tr>
-        <tr>
-          <td>4024 0071 5609 7841</td>
-          <td>5500 0000 0000 0004</td>
-          <td>3716 8224 4230 864</td>
-        </tr>
-        <tr>
-          <td>4539 6719 6461 9076</td>
-          <td>5496 8640 0276 4057</td>
-          <td>3425 9620 7858 956</td>
-        </tr>
-        <tr>
-          <td>4539 6719 6461 9076</td>
-          <td>5423 4829 8607 5669</td>
-          <td>3454 3383 9729 073</td>
-        </tr>
-      </table>
-    </div>
+      <div style="font-size: 21px;padding: 10px;">Credit Card Numbers For Testing Purposes Only</div>
 
-
-      <div style="width: 500px;display: inline-block;">
-      <div style="width:100%;display: inline-block;">
+      <div style="width: 500px;display: inline-block;padding: 5px;font-size: 15px;">
         <table style="width:100%;">
           <tr>
-            <th>Discover</th>
-            <th>JCB</th>
-            <th>Diners club</th>
+            <th>
+              <img src="../assets/images/visa_PNG4@2x.png" title="Visa" alt="Visa" height="18px">
+            </th>
+            <th>
+              <img src="../assets/images/58482354cef1014c0b5e49c0@2x.png" title="MasterCard" alt="MasterCard" height="18px">
+            </th>
+            <th>
+              <img src="../assets/images/AXP_BlueBoxLogo_EXTRALARGEscale_RGB_DIGITAL_1600x1600@2x.png" title="AMEX" alt="AMEX"
+                   height="18px">
+            </th>
           </tr>
           <tr>
-            <td>6011 8645 1067 5740</td>
-            <td>3538 1118 7085 6309</td>
-            <td>3056 9309 0259 04</td>
+            <td>4111 1111 1111 1111</td>
+            <td>5505 0326 0378 1347</td>
+            <td>3718 892513 11442</td>
           </tr>
           <tr>
-            <td>6011 7313 3383 7874</td>
-            <td>3566 0020 2036 0505</td>
-            <td>3852 0000 0232 37</td>
+            <td>4024 0071 5609 7841</td>
+            <td>5500 0000 0000 0004</td>
+            <td>3716 8224 4230 864</td>
           </tr>
           <tr>
-            <td>6011 0845 6829 9588</td>
-            <td>3528 7698 9762 5015</td>
-            <td>3852 0000 0232 37</td>
+            <td>4539 6719 6461 9076</td>
+            <td>5496 8640 0276 4057</td>
+            <td>3425 9620 7858 956</td>
           </tr>
           <tr>
             <td>4539 6719 6461 9076</td>
             <td>5423 4829 8607 5669</td>
-            <td>3056 9309 0259 04</td>
+            <td>3454 3383 9729 073</td>
           </tr>
         </table>
       </div>
-    </div>
+
+
+      <div style="width: 500px;display: inline-block;padding: 5px;font-size: 15px;">
+        <div style="width:100%;display: inline-block;">
+          <table style="width:100%;">
+            <tr>
+              <th>
+                <img src="../assets/images/Discover-logo-e1416429693676.jpg" title="Discover" alt="Discover"
+                     height="18px">
+              </th>
+              <th>
+                <img src="../assets/images/JCB_logo.svg.png" title="JCB" alt="JCB"
+                     height="18px"></th>
+              <th>
+                <img src="../assets/images/DC-international.png" title="Diners Club" alt="Diners Club"
+                     height="18px">
+              </th>
+            </tr>
+            <tr>
+              <td>6011 8645 1067 5740</td>
+              <td>3538 1118 7085 6309</td>
+              <td>3056 9309 0259 04</td>
+            </tr>
+            <tr>
+              <td>6011 7313 3383 7874</td>
+              <td>3566 0020 2036 0505</td>
+              <td>3852 0000 0232 37</td>
+            </tr>
+            <tr>
+              <td>6011 0845 6829 9588</td>
+              <td>3528 7698 9762 5015</td>
+              <td>3852 0000 0232 37</td>
+            </tr>
+            <tr>
+              <td>4539 6719 6461 9076</td>
+              <td>5423 4829 8607 5669</td>
+              <td>3056 9309 0259 04</td>
+            </tr>
+          </table>
+        </div>
+      </div>
 
     </div>
   </div>
