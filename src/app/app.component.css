@@ -19,10 +19,12 @@ table {
 
 td {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 th {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -34,14 +36,6 @@ h2 {
   color: #464647;
   font-family: 'Raleway', sans-serif;
 }
-
-/*::selection {*/
-  /*background: #2699FB; !* WebKit/Blink Browsers *!*/
-/*}*/
-
-/*::-moz-selection {*/
-  /*background: #2699FB; !* Gecko Browsers *!*/
-/*}*/
 
 input[type=text]:focus{
   outline: none;      /* Remove default outline and use border or box-shadow */
