@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {isValid} from 'cc-validate'
+import {isValid} from 'cc-validate';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +18,6 @@ export class AppComponent implements OnInit {
 
   validate() {
     this.validateResponse = isValid(this.currentNumber);
-    console.log('this.validateResponse : ', this.validateResponse);
     if (this.validateResponse.isValid) {
       this.currentStatus = 'VALID CREDIT CARD';
     } else if (!this.validateResponse.isValid) {

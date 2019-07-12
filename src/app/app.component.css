@@ -4,37 +4,93 @@
   border: none;
   height: 30px;
   width: 140px;
-  /*padding: 15px 32px;*/
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  /*margin: 4px 2px;*/
   cursor: pointer;
 }
 
-.image {
-  display: inline-block;
-  height: 88px;
-  width: 80px;
-  border-radius: 60px;
-  border: none;
-  /*border: #2699FB 1px solid;*/
-  -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
-  transition: width 1s;
+.input-div {
+  text-align: center;
+  padding: 10px;
 }
 
-.image:hover {
-  cursor: pointer;
+.input {
+  border: 1px solid #BCE0FD;
+  border-radius: 10px;
+  height: 36px;
+  width: 370px;
+  padding: 0 10px;
+  font-size: 18px;
+  color: #2699FB;
+}
+
+.padding {
+  padding: 0 10px;
+}
+
+.button-div {
+  text-align: center;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.status-label {
+  color: #2699FB;
+  padding-left: 28px;
+}
+
+.status {
+  color: #727273;
+}
+
+.display {
   display: inline-block;
-  height: 88px;
-  width: 288px;
-  border-radius: 60px;
-  border: #2699FB 1px solid;
+}
+
+.title-div {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.table-title {
+  font-size: 21px;
+  padding: 10px;
+}
+
+.table-container {
+  width: 800px;
+  box-shadow: -1px 0 4px lightgrey;
+  padding: 10px;
+}
+
+.top-container {
+  height: 80vh;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.bottom-container {
+  height: 15vh;
+  text-align: center;
+}
+
+.div {
+  width: 500px;
+  padding: 5px;
+  font-size: 15px;
 }
 
 table {
   text-align: center;
+  width:100%;
 }
 
 td {
@@ -57,7 +113,7 @@ h2 {
   font-family: 'Raleway', sans-serif;
 }
 
-input[type=text]:focus{
-  outline: none;      /* Remove default outline and use border or box-shadow */
+input[type=text]:focus {
+  outline: none; /* Remove default outline and use border or box-shadow */
   box-shadow: 0 0 0 2px #2699FB; /* Full freedom. (works also with border-radius) */
 }
