@@ -16,9 +16,34 @@
 table {
   text-align: center;
 }
+
 td {
   text-align: center;
 }
+
 th {
   text-align: center;
+}
+
+h1 {
+  color: #464647;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  color: #464647;
+  font-family: 'Raleway', sans-serif;
+}
+
+/*::selection {*/
+  /*background: #2699FB; !* WebKit/Blink Browsers *!*/
+/*}*/
+
+/*::-moz-selection {*/
+  /*background: #2699FB; !* Gecko Browsers *!*/
+/*}*/
+
+input[type=text]:focus{
+  outline: none;      /* Remove default outline and use border or box-shadow */
+  box-shadow: 0 0 0 2px #2699FB; /* Full freedom. (works also with border-radius) */
 }
