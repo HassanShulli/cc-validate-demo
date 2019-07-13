@@ -6,8 +6,7 @@
 
   <div class="input-div">
     <input type="text" class="input"
-           [(ngModel)]="currentNumber"
-           (paste)="validate();">
+           [(ngModel)]="currentNumber">
   </div>
 
   <div class="button-div">
@@ -16,8 +15,9 @@
     </button>
 
     <span class="status-label">STATUS: </span>
-
-    <span class="status">{{currentStatus}}</span>
+    <div class="status-div">
+      <span class="status">{{currentStatus}}</span>
+    </div>
   </div>
 
   <div class="center">

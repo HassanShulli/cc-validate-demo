@@ -16,6 +16,11 @@
   padding: 10px;
 }
 
+.status-div {
+  display: inline-block;
+  width: 200px
+}
+
 .input {
   border: 1px solid #BCE0FD;
   border-radius: 10px;
@@ -83,14 +88,14 @@
 }
 
 .div {
-  width: 500px;
+  width: 700px;
   padding: 5px;
   font-size: 15px;
 }
 
 table {
   text-align: center;
-  width:100%;
+  width: 100%;
 }
 
 td {
