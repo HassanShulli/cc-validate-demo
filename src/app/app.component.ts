@@ -24,6 +24,11 @@ export class AppComponent implements OnInit {
       this.currentStatus = 'INVALID CREDIT CARD';
     }
     this.currentNumber = this.validateResponse.cardNumber;
+    console.log('this.validateResponse : ', this.validateResponse);
+    console.log('this.validateResponse.cardNumber : ', this.validateResponse.cardNumber);
+    console.log('this.validateResponse.cardType : ', this.validateResponse.cardType);
+    console.log('this.validateResponse.isValid : ', this.validateResponse.isValid);
+    console.log('this.validateResponse.message : ', this.validateResponse.message);
   }
 
 }
