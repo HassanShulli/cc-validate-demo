@@ -16,16 +16,30 @@
   padding: 10px;
 }
 
-.status-div {
+.status-div-outer {
+  height: 20px;
+  width: 350px;
+  display: inline-block;
+  text-align: left;
+}
+
+.status-div-inner {
   display: inline-block;
   width: 200px
+}
+
+.card-type-div {
+  height: 30px;
+  width: 350px;
+  display: inline-block;
+  text-align: left;
 }
 
 .input {
   border: 1px solid #BCE0FD;
   border-radius: 10px;
   height: 36px;
-  width: 370px;
+  width: 270px;
   padding: 0 10px;
   font-size: 18px;
   color: #2699FB;
@@ -43,7 +57,7 @@
 
 .status-label {
   color: #2699FB;
-  padding-left: 28px;
+  vertical-align: top;
 }
 
 .status {
@@ -52,6 +66,10 @@
 
 .display {
   display: inline-block;
+}
+
+.inline {
+  display: inline;
 }
 
 .title-div {
@@ -71,7 +89,7 @@
 }
 
 .top-container {
-  height: 87vh;
+  height: 81vh;
 }
 
 .full-width {
@@ -91,6 +109,47 @@
   width: 700px;
   padding: 5px;
   font-size: 15px;
+}
+
+.contact-me {
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+  display: inline-block;
+  width: 150px;
+  vertical-align: top;
+}
+
+.bottom-center-div {
+  display: inline-block;
+  width: 60%;
+  min-width: 500px;
+}
+
+.bottom-left-div {
+  display: inline-block;
+  width: 20%;
+  min-width: 240px;
+}
+
+.bottom-right-div {
+  display: inline-block;
+  width: 20%;
+}
+
+.float {
+  float: left;
+}
+
+.related-works {
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+  display: inline-block;
+  width: 190px;
+  vertical-align: top;
+}
+
+.footer {
+  vertical-align: top;
 }
 
 table {
@@ -116,6 +175,10 @@ h1 {
 h2 {
   color: #464647;
   font-family: 'Raleway', sans-serif;
+}
+
+input {
+  font-family: 'Roboto', sans-serif;
 }
 
 input[type=text]:focus {

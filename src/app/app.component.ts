@@ -9,10 +9,12 @@ import {isValid} from 'cc-validate';
 export class AppComponent implements OnInit {
   currentNumber: any;
   currentStatus: any;
+  currentCardType: any;
   validateResponse: any;
 
   ngOnInit() {
     this.currentNumber = '';
+    this.currentCardType = 'N/A';
     this.currentStatus = 'VALID CREDIT CARD';
   }
 
@@ -24,11 +26,12 @@ export class AppComponent implements OnInit {
       this.currentStatus = 'INVALID CREDIT CARD';
     }
     this.currentNumber = this.validateResponse.cardNumber;
-    console.log('this.validateResponse : ', this.validateResponse);
-    console.log('this.validateResponse.cardNumber : ', this.validateResponse.cardNumber);
-    console.log('this.validateResponse.cardType : ', this.validateResponse.cardType);
-    console.log('this.validateResponse.isValid : ', this.validateResponse.isValid);
-    console.log('this.validateResponse.message : ', this.validateResponse.message);
+
+    if (this.validateResponse.cardType !== '') {
+      this.currentCardType = this.validateResponse.cardType;
+    } else {
+      this.currentCardType = 'N/A';
+    }
   }
 
 }
